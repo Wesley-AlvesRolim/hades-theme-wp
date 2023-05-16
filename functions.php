@@ -18,6 +18,7 @@ function load_hades_support()
 {
 	add_editor_style('style.css');
 	hades_custom_logo_setup();
+	add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'load_hades_support');
