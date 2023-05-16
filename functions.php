@@ -1,5 +1,5 @@
 <?php
-
+include_once dirname(__FILE__) . '/plugins/simple-cpt/simple-cpt.php';
 
 function hades_custom_logo_setup()
 {
