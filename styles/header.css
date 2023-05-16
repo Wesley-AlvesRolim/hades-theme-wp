@@ -1,0 +1,44 @@
+body > header {
+  --header-width: min(90vw, 1000px);
+}
+
+body > header {
+  width: var(--header-width);
+  height: 64px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  top: 0;
+  left: calc((100vw - var(--header-width)) / 2);
+  z-index: 3;
+}
+
+body > header .logo,
+body > header .logo img,
+body > header > nav {
+  height: 64px;
+}
+
+body > header > nav > ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+body > header > nav > ul a {
+  font-weight: 500;
+  color: var(--font-color);
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+body > header > nav > ul a:hover {
+  color: var(--font-color);
+  opacity: 0.75;
+}

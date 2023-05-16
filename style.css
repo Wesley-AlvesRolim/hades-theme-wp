@@ -1,0 +1,15 @@
+/*
+Theme Name: Hades
+Theme URI: https://wordpress.org/themes/hades/
+Author: Wesley
+Author URI: https://github.com/Wesley-AlvesRolim/
+Description: A theme of Hades Game
+Version: 1.0
+License: MIT
+License URI: https://mit-license.org/
+Text Domain: hadestheme
+Tags: custom-menu, custom-logo, featured-images, full-site-editing, accessibility-ready
+*/
+
+@import url(./styles/global.css);
+@import url(./styles/header.css);

@@ -1,0 +1,24 @@
+:root {
+  --background: #21262d;
+  --font-color: #f9f9f9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background);
+}
+
+li {
+  list-style: none;
+}
+
+body > main {
+  margin-top: -64px;
+}
