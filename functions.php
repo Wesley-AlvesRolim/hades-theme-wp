@@ -1,5 +1,6 @@
 <?php
-include_once dirname(__FILE__) . '/plugins/simple-cpt/simple-cpt.php';
+include_once dirname(__FILE__) . '/inc/custom-post-types.php';
+
 
 function hades_custom_logo_setup()
 {
