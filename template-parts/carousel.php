@@ -1,6 +1,7 @@
 <section id="carousel">
-    <div id="carousel-slides" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carousel-slides" class="carousel slide carousel-fade" data-bs-interval="3000" data-bs-ride="carousel">
         <div class="carousel-inner">
+
             <?php
             $args = array(
                 'post_type' => 'carousel',
@@ -8,7 +9,7 @@
             );
             $query = new WP_Query($args);
 
-            if ($query->have_posts()) :
+            if ($query->have_posts()) {
                 $index = 0;
                 while ($query->have_posts()) : $query->the_post();
 
@@ -29,7 +30,20 @@
                     $index = $index + 1;
                 endwhile;
                 wp_reset_postdata();
-            endif; ?>
+            } else {
+            ?>
+                <div class="carousel-item active">
+                    <img src="/wp-content/themes/hades/assets/images/battle-out-of-hell-cover.png" alt="Battle out of hell">
+                </div>
+                <div class="carousel-item">
+                    <img src="/wp-content/themes/hades/assets/images/nothing-is-impossible-cover.png" alt="Nothing is impossible">
+                </div>
+                <div class="carousel-item">
+                    <img src="/wp-content/themes/hades/assets/images/befriend-gods-ghosts-monsters-cover.png" alt="Befriend, gods, ghosts and monsters">
+                </div>
+            <?php
+            }
+            ?>
         </div>
     </div>
 </section>

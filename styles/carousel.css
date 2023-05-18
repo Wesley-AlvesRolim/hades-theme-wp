@@ -5,8 +5,8 @@ section#carousel {
 section#carousel img {
   height: 100vh;
   object-fit: cover;
-   mask-image: linear-gradient(to top, #00000000 0%,#000000a6 10%);
-   -webkit-mask-image: linear-gradient(to top, #00000000 0%,#000000a6 10%);
+  mask-image: linear-gradient(to top, #00000000 0%, #000000a6 10%);
+  -webkit-mask-image: linear-gradient(to top, #00000000 0%, #000000a6 10%);
 }
 
 section#carousel .carousel-item {
@@ -30,6 +30,7 @@ section#carousel .carousel-item::before {
 section#carousel .carousel-item .description {
   width: min(50vw, 600px);
   padding: 0.5rem;
+  font-size: 0.5rem;
   color: var(--font-color);
   position: absolute;
   transform: translate(50%);
@@ -44,6 +45,7 @@ section#carousel .carousel-item .description {
   }
 
   section#carousel .carousel-item .description {
+    font-size: 1rem;
     padding: 0.5rem;
     padding-right: 5rem;
   }
