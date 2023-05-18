@@ -3,6 +3,15 @@ include_once dirname(__FILE__) . '/inc/custom-post-types.php';
 include_once dirname(__FILE__) . '/inc/social-media-widget.php';
 include_once dirname(__FILE__) . '/inc/shop-widget.php';
 
+function register_my_menus()
+{
+	register_nav_menus(
+		array(
+			'header_menu' => __('Header Menu'),
+		)
+	);
+}
+add_action('init', 'register_my_menus');
 
 function hades_custom_logo_setup()
 {
@@ -17,10 +26,13 @@ function hades_custom_logo_setup()
 	add_theme_support('custom-logo', $defaults);
 }
 
+
 function load_hades_support()
 {
-	add_editor_style('style.css');
 	hades_custom_logo_setup();
+	add_editor_style('style.css');
+	add_theme_support('widgets');
+	add_theme_support('menus');
 	add_theme_support('post-thumbnails');
 }
 
