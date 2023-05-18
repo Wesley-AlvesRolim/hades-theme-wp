@@ -1,5 +1,7 @@
 <?php
 include_once dirname(__FILE__) . '/inc/custom-post-types.php';
+include_once dirname(__FILE__) . '/inc/social-media-widget.php';
+include_once dirname(__FILE__) . '/inc/shop-widget.php';
 
 
 function hades_custom_logo_setup()
