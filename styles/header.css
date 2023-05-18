@@ -16,6 +16,16 @@ body > header {
   z-index: 3;
 }
 
+body > .header-background {
+  width: 100vw;
+  height: 64px;
+  background-color: #000000b5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 body > header .logo,
 body > header .logo img,
 body > header > nav {

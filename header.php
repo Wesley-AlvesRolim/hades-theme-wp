@@ -4,7 +4,7 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="Vencedor de mais de 50 prêmios de Jogo do Ano, Hades é um RPG de ação e exploração de masmorras rogue-like.">
   <meta name="author" content="Wesley Alves Rolim">
   <title>
     <?php bloginfo('name'); ?> |
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <div class="header-background"></div>
   <header>
     <div class="logo">
       <a href="/">
